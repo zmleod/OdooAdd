@@ -1,0 +1,1 @@
+from . import weixin_controller
