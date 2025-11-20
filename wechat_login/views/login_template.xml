@@ -1,0 +1,13 @@
+<odoo>
+    <data>
+        <!-- 继承登录页面模板 -->
+        <template id="wechat_login_template" name="WeChat Login Button" inherit_id="web.login">
+<xpath expr="//form//button[@type='submit']" position="before">
+    <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx5d723cf60c17644d&amp;redirect_uri=https%3A%2F%2Fod.lwmt.cn%2Fweixin%2Fcallback&amp;response_type=code&amp;scope=snsapi_login&amp;state=RANDOM_STATE#wechat_redirect"
+       class="btn btn-primary d-block mt-3">
+        微信登录
+    </a>
+</xpath>
+        </template>
+    </data>
+</odoo>
