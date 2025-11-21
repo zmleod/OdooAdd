@@ -10,8 +10,8 @@ _logger = logging.getLogger(__name__)
 
 class WeixinAuthController(http.Controller):
 
-    WEIXIN_APPID = 'wx5d723cf60c17644d'
-    WEIXIN_SECRET = '61b145de2c835a1924303dc1ccc8d646'
+    WEIXIN_APPID = ''
+    WEIXIN_SECRET = ''
 
     def _get_wechat_ids(self, code):
         """获取微信身份标识（同时返回 openid 和 unionid）"""
